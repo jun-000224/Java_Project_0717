@@ -8,42 +8,41 @@ public class Up_and_Down {
 		Scanner s = new Scanner(System.in);
 		Random ran = new Random();
 		
-		System.out.println("업다운리 시작~");
-		int random = ran.nextInt(100)+1;
+		System.out.println("업다운 게임 시작");
+		int random = ran.nextInt(100) + 1;
 		
 		int up = 0;
-		int down = 0; //저장 변수
+		int down = 100;
 		int count = 0;
 		
-		while(true) {
-			System.out.println("숫자 하나 골라봐라잉");
+		while (true) {
+			System.out.println("숫자 하나를 고르시오 : ");
 			int answer = s.nextInt();
-			
-			if(answer>=1 && answer<=100) {
-				count ++;
-			}else {
-				System.err.println("똑바로 해라잉");
-				continue;	
+
+			if (answer >= 1 && answer <= 100) {
+				count++;
 				
-			if(up<=answer || down>=answer) {
-				System.out.println("다시 제대로 하세요.");
-				continue;
-				
-			}else {			
-				if(random>answer) {
+				if (answer <= up || answer >= down) {
+					System.out.println("범위 내에서 다시 입력하세요. 현재 범위: " + (up + 1) + " ~ " + (down - 1));
+					continue;
+				}
+
+				if (random > answer) {
 					System.out.println("Up");
-					up=answer;
-				}else if(random < answer) {
-					System.out.println("down");
+					up = answer;
+				} else if (random < answer) {
+					System.out.println("Down");
 					down = answer;
-				}else {
+				} else {
 					System.out.println("정답입니다.");
 					break;
 				}
+			} else {
+				System.err.println("1~100 사이의 수를 입력하세요.");
+				continue;
 			}
-			System.out.println(count + "번 만에 맞추셨습니다.");
 		}
-		}
-
+		
+		System.out.println(count + "번 만에 맞추셨습니다.");
 	}
-    
+}
