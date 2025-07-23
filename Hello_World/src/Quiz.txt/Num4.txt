@@ -1,0 +1,26 @@
+package Quiz;
+
+import java.util.Scanner;
+
+public class Num4 {
+	
+	public static void main(String[] args) {
+//		4. 구구단을 출력하시오. 
+//		단, 5단과 8단은 제외하고 출력
+			
+		for(int i=2; i<=9; i++) {
+			if(i==5 || i==8) {
+				continue;
+			}
+			else {
+				for(int j=1; j<=9; j++) {
+					System.out.println(i + " * " + j + " = "+ (i*j));
+				
+				}
+			}
+		}
+
+		
+	
+}
+}
