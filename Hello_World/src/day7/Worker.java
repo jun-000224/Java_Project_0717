@@ -11,3 +11,7 @@ public class Worker extends Person{
 	}
 	
 }
+
+
+boolean fig = false;
+for(int num :)

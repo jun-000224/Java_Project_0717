@@ -20,7 +20,7 @@ public class Array_Main {
         
         //ArrayFunc 클래스 안에 bigNumArr메소드 만들기
         //배열에서 8이상의 숫자만 따로 떼서 리턴해주는 bigNumArr메소드 구현  
-        int bigNumArr[] = ArrayFunc.bigNumArr(arr); // ✅ 메소드 호출은 () 사용
+        int bigNumArr[] = ArrayFunc.bigNumArr(arr); 
         System.out.println("8이상의 숫자 배열 " + Arrays.toString(bigNumArr));
     }
 }
