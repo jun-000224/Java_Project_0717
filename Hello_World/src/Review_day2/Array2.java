@@ -1,5 +1,3 @@
-\
-
 package Review_day2;
 
 public class Array2 {
