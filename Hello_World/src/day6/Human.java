@@ -17,7 +17,7 @@ public class Human {
 		this.height = height;
 	}	
 	
-	private Human(String name, int age){
+	Human(String name, int age){
 		this(name, age, 0.0); //this는 꼭 첫줄에만 사용하기
 		
 	}
