@@ -10,9 +10,8 @@ public class DebugEX1 {
 		b++;
 		int c = a*b;
 		
-		a %=2;
 		if(a>5) {
-			System.out.println("실행!" + a);
+			System.out.println("실행!");
 		}
 		for(int i=1 ; i<10; i++) {
 			System.out.println(i);
